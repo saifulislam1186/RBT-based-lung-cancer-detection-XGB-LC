@@ -6,7 +6,7 @@ Outputs are written to `outputs/`; the frozen model + metadata to `models/`.
 
 ---
 
-## TL;DR Results (validation set, fixed threshold 0.70)
+## Results validation set (fixed threshold 0.70)
 
 | Model  | Accuracy % | Sensitivity | Specificity | Precision | AUC  |
 |--------|-----------:|------------:|------------:|----------:|-----:|
@@ -16,7 +16,7 @@ Outputs are written to `outputs/`; the frozen model + metadata to `models/`.
 
 ---
 
-## TL;DR Results (test set, fixed threshold 0.70)
+##  Results test set (fixed threshold 0.70)
 
 | Model  | Accuracy % | Sensitivity | Specificity | Precision | AUC  |
 |--------|-----------:|------------:|------------:|----------:|-----:|
