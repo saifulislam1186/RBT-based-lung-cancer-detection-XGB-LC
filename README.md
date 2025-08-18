@@ -12,6 +12,14 @@ The article (and its supplementary files) are available via PubMed Central.
 
 We do not redistribute the raw data in this repository. See `DATA_SOURCES.md` for instructions to download from the original source.
 
+## Environment
+- Python: **3.10** (tested)
+- Install deps: `pip install -r requirements.txt`
+
+## Models included
+- Logistic Regression, SVM (RBF/linear), Random Forest, Naive Bayes, AdaBoost
+- Gradient boosting: XGBoost, LightGBM
+
 ## How to reproduce
 1. Clone: `git clone https://github.com/saifulislam1186/RBT-based-lung-cancer-detection-XGB-LC.git`
 2. `pip install -r requirements.txt`

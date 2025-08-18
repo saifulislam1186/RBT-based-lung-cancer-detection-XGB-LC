@@ -1,0 +1,38 @@
+name: xgb-lc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+
+  # Core
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - imbalanced-learn
+
+  # Models
+  - xgboost
+  - lightgbm
+
+  # Viz & notebook
+  - matplotlib
+  - seaborn
+  - jupyter
+  - nbconvert
+  - ipykernel
+  - ipywidgets
+
+  # Utils
+  - joblib
+  - kneed
+  - statsmodels
+  - openpyxl
+  - graphviz
+  - python-graphviz
+
+  # pip-only extras
+  - pip:
+      - nbstripout
