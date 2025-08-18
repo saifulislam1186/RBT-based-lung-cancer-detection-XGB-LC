@@ -5,18 +5,21 @@ and test ML models (incl. **XGBoost & LightGBM**) for lung cancer detection usin
 Outputs are written to `outputs/`; the frozen model + metadata to `models/`.
 
 ---
+
 ## TL;DR Results (validation set, fixed threshold 0.70)
 
-| Model  | Accuracy % | Sensitivity | Specificity | Precision |    AUC    |
-|--------|-----------:|------------:|------------:|----------:|----------:|
+| Model  | Accuracy % | Sensitivity | Specificity | Precision | AUC  |
+|--------|-----------:|------------:|------------:|----------:|-----:|
 | XGB-LC | **90.2**   | **0.933**   | **0.857**   | **0.903** | **0.935** |
 
 > After running the notebook, see `outputs/threshold_best_by_model.csv`.
 
+---
+
 ## TL;DR Results (test set, fixed threshold 0.70)
 
-| Model  | Accuracy % | Sensitivity | Specificity | Precision |    AUC    |
-|--------|-----------:|------------:|------------:|----------:|----------:|
+| Model  | Accuracy % | Sensitivity | Specificity | Precision | AUC  |
+|--------|-----------:|------------:|------------:|----------:|-----:|
 | XGB-LC | **79.4**   | **0.846**   | **0.762**   | **0.688** | **0.828** |
 
 > After running the notebook, see `outputs/test_metrics_XGB-LC.csv`.
@@ -30,8 +33,10 @@ Outputs are written to `outputs/`; the frozen model + metadata to `models/`.
 conda env create -f environment.yml
 conda activate xgb-lc
 python -m notebook
+```
 
 ### Option B — pip + venv
+```bash
 python -m venv .venv
 # Windows:
 .venv\Scripts\activate
@@ -40,47 +45,49 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 python -m notebook
+```
 
-Then open notebooks/LC_RBT_end_to_end.ipynb and Run All.
-If data/ is empty, a file picker lets you choose train/test files from anywhere on your PC.
+Then open `notebooks/LC_RBT_end_to_end.ipynb` and **Run All**.  
+If `data/` is empty, a file picker lets you choose train/test files from anywhere on your PC.
+
+---
 
 ## Data source
 
 This project uses the public dataset from:
 
-Wu J, Zan X, Gao L, Zhao J, Fan J, Shi H, Wan Y, Yu E, Li S, Xie X.
-A Machine Learning Method for Identifying Lung Cancer Based on Routine Blood Indices: Qualitative Feasibility Study.
-JMIR Medical Informatics 2019;7(3):e13476. https://doi.org/10.2196/13476
+Wu J, Zan X, Gao L, Zhao J, Fan J, Shi H, Wan Y, Yu E, Li S, Xie X.  
+**A Machine Learning Method for Identifying Lung Cancer Based on Routine Blood Indices: Qualitative Feasibility Study.**  
+*JMIR Medical Informatics* 2019;7(3):e13476. https://doi.org/10.2196/13476
 
-The article (and its supplementary files) are available via PubMed Central.
-License: Creative Commons Attribution 4.0 (CC BY 4.0).
-© The authors. “This is an open-access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.”
+The article (and its supplementary files) are available via PubMed Central.  
+**License:** Creative Commons Attribution 4.0 (CC BY 4.0).  
+© The authors. *“This is an open-access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.”*
 
-We do not redistribute the raw data in this repository. See DATA_SOURCES.md for instructions to download from the original source.
+We do not redistribute the raw data in this repository. See `DATA_SOURCES.md` for instructions to download from the original source.
+
+---
 
 ## Models included
 
-Logistic Regression
+- Logistic Regression  
+- SVM (RBF/linear)  
+- Random Forest  
+- Naive Bayes  
+- AdaBoost  
+- Gradient boosting: XGBoost, LightGBM  
 
-SVM (RBF/linear)
-
-Random Forest
-
-Naive Bayes
-
-AdaBoost
-
-Gradient boosting: XGBoost, LightGBM
+---
 
 ## Reproducibility
 
-Python 3.10 (see environment.yml)
+- Python 3.10 (see `environment.yml`)  
+- Seeds set in the notebook  
+- Notebook outputs auto-stripped on commit (via `nbstripout`)  
 
-Seeds set in the notebook
+---
 
-Notebook outputs auto-stripped on commit (via nbstripout)
+## License
 
-##License
-
-Code released under the MIT License (see LICENSE).
-No datasets are redistributed; see DATA_SOURCES.md.
+Code released under the MIT License (see `LICENSE`).  
+No datasets are redistributed; see `DATA_SOURCES.md`.
