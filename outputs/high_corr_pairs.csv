@@ -1,0 +1,13 @@
+Attribute 1,Attribute 2,Correlation
+White blood cell,Neutrophilic granulocytes,0.97
+Hemoglobin,Hematocrit,0.96
+Eosinophil ratio,Eosinophil cells,0.95
+Platelet,Plateletcrit,0.92
+Red blood cell count,Hematocrit,0.9
+Total bilirubin,Indirect bilirubin,0.89
+Total cholesterol,Low-density lipoprotein,0.87
+Red blood cell count,Hemoglobin,0.86
+Mean corpuscular volume,Mean corpuscular hemoglobin,0.84
+Mean platelet volume,Large platelet ratio,0.83
+Globulin,ALB/GLB,-0.85
+Neutrophile granulocyte ratio,Lymphocyte ratio,-0.93

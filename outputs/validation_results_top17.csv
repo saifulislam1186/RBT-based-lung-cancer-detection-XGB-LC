@@ -1,0 +1,8 @@
+Accuracy (%),Sensitivity,Specificity,Precision,AUC,Model
+82.3529,0.9667,0.619,0.7838,0.8698,Logistic Regression
+72.549,0.7,0.7619,0.8077,0.8349,Naive Bayes
+84.3137,0.9667,0.6667,0.8056,0.8952,Random Forest
+78.4314,0.9333,0.5714,0.7568,0.8532,AdaBoost
+76.4706,1.0,0.4286,0.7143,0.9349,XGBoost
+72.549,1.0,0.3333,0.6818,0.9079,LightGBM
+82.3529,0.9667,0.619,0.7838,0.8762,Support Vector Machine

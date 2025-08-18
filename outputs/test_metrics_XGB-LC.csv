@@ -1,0 +1,2 @@
+model_name,threshold,features_used,Accuracy_%,Sensitivity,Specificity,Precision,AUC
+XGB-LC,0.7,"['Creatine kinase isoenzymes', 'Albumin', 'Basophil ratio', 'Monocytes', 'Monocyte ratio', 'Creatine kinase', 'Lymphocyte ratio', 'Platelet distribution width', 'White blood cell', 'Alkaline phosphatase', 'Age', 'Aspartate aminotransferase', 'Lactate dehydrogenase', 'Glucose', 'Carbamide', 'Mean corpuscular volume', 'Globulin']",79.4118,0.8462,0.7619,0.6875,0.8278
