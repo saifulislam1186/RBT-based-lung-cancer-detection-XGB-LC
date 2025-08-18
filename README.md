@@ -5,12 +5,19 @@ and test ML models (incl. **XGBoost & LightGBM**) for lung cancer detection usin
 Outputs are written to `outputs/`; the frozen model + metadata to `models/`.
 
 ---
+## TL;DR Results (validation set, fixed threshold 0.70)
 
-## TL;DR Results (external test, fixed threshold 0.70)
+| Model  | Accuracy % | Sensitivity | Specificity | Precision |    AUC    |
+|--------|-----------:|------------:|------------:|----------:|----------:|
+| XGB-LC | **90.2**   | **0.933**   | **0.857**   | **0.903** | **0.935** |
 
-| Model  | Accuracy % | Sensitivity | Specificity | Precision | AUC |
-|--------|-----------:|------------:|------------:|----------:|----:|
-| XGB-LC | **xx.x**   | **0.xxx**   | **0.xxx**   | **0.xxx** | **0.xxx** |
+> After running the notebook, see `outputs/threshold_best_by_model.csv`.
+
+## TL;DR Results (test set, fixed threshold 0.70)
+
+| Model  | Accuracy % | Sensitivity | Specificity | Precision |    AUC    |
+|--------|-----------:|------------:|------------:|----------:|----------:|
+| XGB-LC | **79.4**   | **0.846**   | **0.762**   | **0.688** | **0.828** |
 
 > After running the notebook, see `outputs/test_metrics_XGB-LC.csv`.
 
