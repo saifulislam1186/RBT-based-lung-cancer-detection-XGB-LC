@@ -26,3 +26,6 @@ We do not redistribute the raw data in this repository. See `DATA_SOURCES.md` fo
 3. Place CSVs in `data/` (not committed).
 4. Open `notebooks/LC_RBT_end_to_end.ipynb` and run top-to-bottom.
 5. Results are written to `outputs/` (metrics CSVs, tables,Excel).
+
+## License
+Code released under the MIT License (see `LICENSE`). No datasets are redistributed; see `DATA_SOURCES.md`.
