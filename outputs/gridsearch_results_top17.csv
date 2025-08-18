@@ -1,0 +1,8 @@
+Model,Accuracy (%),Sensitivity,Specificity,Precision,AUC,clf__C,clf__class_weight,clf__fit_intercept,clf__penalty,clf__solver,clf__var_smoothing,clf__criterion,clf__max_depth,clf__max_features,clf__min_samples_leaf,clf__min_samples_split,clf__n_estimators,clf__algorithm,clf__estimator,clf__learning_rate,clf__colsample_bytree,clf__gamma,clf__min_child_weight,clf__reg_alpha,clf__reg_lambda,clf__scale_pos_weight,clf__subsample,clf__boosting_type,clf__min_child_samples,clf__kernel
+Logistic Regression,78.76106194690266,0.7516339869281046,0.863013698630137,0.92,0.905989793177545,0.01,,True,l2,liblinear,,,,,,,,,,,,,,,,,,,,
+Naive Bayes,69.91150442477876,0.6405228758169934,0.821917808219178,0.8828828828828829,0.8671322410242637,,,,,,1e-09,,,,,,,,,,,,,,,,,,,
+Random Forest,97.78761061946902,1.0,0.9315068493150684,0.9683544303797469,0.9989255976363148,,balanced,,,,,gini,5.0,sqrt,2.0,2.0,100.0,,,,,,,,,,,,,
+AdaBoost,73.45132743362832,0.7581699346405228,0.684931506849315,0.8345323741007195,0.8231265108783239,,,,,,,,,,,,50.0,SAMME,DecisionTreeClassifier(max_depth=1),0.01,,,,,,,,,,
+XGBoost,93.36283185840708,0.9803921568627451,0.8356164383561644,0.9259259259259259,0.9855851016205568,,,,,,,,3.0,,,,100.0,,,0.01,0.7,0,1.0,0.0,1.0,1.0,0.7,,,
+LightGBM,92.03539823008849,0.9803921568627451,0.7945205479452054,0.9090909090909091,0.9755573462261617,,,,,,,,3.0,,,,100.0,,,0.01,0.7,,,0.0,1.0,,0.7,gbdt,10.0,
+Support Vector Machine,84.95575221238938,0.8496732026143791,0.8493150684931506,0.9219858156028369,0.9160175485719402,0.01,,,,,,,,,,,,,,,,scale,,,,,,,,linear
