@@ -2,7 +2,7 @@
 
 End-to-end, notebook-first pipeline to train, tune, feature-select, validate, threshold-optimize,
 and test ML models (incl. **XGBoost & LightGBM**) for lung cancer detection using routine blood indices.  
-Outputs are written to `outputs/`; the frozen model + metadata to `models/`.
+Outputs are written to `outputs/`; the final model + metadata to `models/`.
 
 ---
 
