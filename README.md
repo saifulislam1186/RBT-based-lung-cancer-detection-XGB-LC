@@ -6,7 +6,7 @@ Outputs are written to `outputs/`; the final model + metadata to `models/`.
 
 ---
 
-## Results validation set (fixed threshold 0.70)
+## Results - Validation set (fixed threshold 0.70)
 
 | Model  | Accuracy % | Sensitivity | Specificity | Precision | AUC  |
 |--------|-----------:|------------:|------------:|----------:|-----:|
@@ -16,13 +16,13 @@ Outputs are written to `outputs/`; the final model + metadata to `models/`.
 
 ---
 
-##  Results test set (fixed threshold 0.70)
+##  Results - Test set (fixed threshold 0.70)
 
 | Model  | Accuracy % | Sensitivity | Specificity | Precision | AUC  |
 |--------|-----------:|------------:|------------:|----------:|-----:|
 | XGB-LC | **79.4**   | **0.846**   | **0.762**   | **0.688** | **0.828** |
 
-> After running the notebook, see `outputs/test_metrics_XGB-LC.csv`.
+> Drop in performance due to missing attributes in final test set. After running the notebook, see `outputs/test_metrics_XGB-LC.csv`.
 
 ### Sample figure
 
