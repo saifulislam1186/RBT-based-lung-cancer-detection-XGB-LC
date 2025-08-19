@@ -24,6 +24,10 @@ Outputs are written to `outputs/`; the final model + metadata to `models/`.
 
 > After running the notebook, see `outputs/test_metrics_XGB-LC.csv`.
 
+### Sample figure
+
+![Correlation block (|r|>0.8)](docs/figures/corr_block_r1_c1.png)
+
 ---
 
 ## How to run
